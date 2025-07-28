@@ -9,16 +9,7 @@
     opacity: 0.9;
 }
 
-.nav--brand-heading {
-    /* font-size: 2.5rem; */
-    line-height: 1;
-    font-weight: 900;
-}
 
-.nav--brand-subheading {
-    /* font-size: 1.5rem; */
-    font-weight: 600;
-}
 
 /* hamburger icon  */
 .nav-menu-icon-img {
@@ -59,8 +50,8 @@
 }
 
 .nav-item {
-    font-family: 'Poppins';
-    font-weight: 500;
+    /* font-family: 'Poppins'; */
+    /* font-weight: 500; */
     /* font-size: 1.8rem; */
     width: 90%;
     padding: .6rem 0;
@@ -129,54 +120,14 @@
 
 
 
-/* site footer  */
-/* .site-footer {
-    padding: 2rem;
-    border-top: 1px solid #e0d8c8;
-
-}
-
-.footer__brand-heading {
-    font-weight: 600;
-    cursor: pointer;
-    line-height: 1.2;
-}
-
-.footer__link {
-    font-weight: 500;
-    padding: .5rem 0;
-    display: inline-block;
-    margin-top: .5rem;
-
-}
-
-.footer__link:hover {
-    color: var(--clr-warm-light);
-    transition: all 0.3s;
-}
-
-.foot--link-contact {
-    margin-top: 0;
-    display: inline;
-}
-
-.footer__bottom {
-    border-top: 1px solid #e0d8c8;
-}
-
-.footer__legal-container {
-    gap: 0.5rem;
-} */
-
-
 /* site footer */
 .site-footer {
-    padding: 2rem;
+    /* padding: 2rem; */
     border-top: 1px solid #e0d8c8;
   }
   
   .footer__brand-heading {
-    font-weight: 600;
+    /* font-weight: 600; */
     cursor: pointer;
     line-height: 1.2;
   }
