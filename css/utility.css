@@ -58,6 +58,13 @@
     font-size: 2rem;
     color: var(--clr-rich-brown);
 }
+.p-2{
+    padding: 2rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
 
 .text-upper {
     text-transform: uppercase;

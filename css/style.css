@@ -145,6 +145,51 @@
 
 /* blog page  */
 
-.blog--section{
-    background-color: pink;
+.blog--section-heading {
+    /* font-size: 3rem; */
+    /* font-weight: 800; */
+    color: var(--clr-warm-medium);
+    border-left: .5rem solid var(--clr-warm-medium);
+    line-height: 1.1;
+    padding-left: .8rem;
+}
+
+.blog--card {
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgb(0 0 0/0.1);
+    background-color:var(--clr-bg-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: start;
+    transition: 0.3s;
+    padding: 1rem 2rem;
+    min-height: 22rem;
+}
+
+.blog--card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+}
+
+.blog--btn{
+    font-weight: 500;
+  /* font-size: 1.8rem; */
+  /* text-decoration: none; */
+  color: #D4A373;
+  border: 2px solid #D4A373;
+  padding: .8rem 1.8rem;
+  border-radius: .6rem;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* position: relative; */
+  /* z-index: 1; */
+  /* font-family: 'Poppins'; */
+}
+
+.blog--btn:hover{
+    background-color: #D4A373;
+    color: #fff;
 }
