@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <!-- <link rel="stylesheet" href="css/footer.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
 
 </head>
 
@@ -122,34 +120,42 @@
 
     <!-- Home About Section -->
     <section class="main--about section-spacing">
-        <div class="container text-center">
+        <div class="container text-center ">
 
             <!-- Title Area -->
             <div class="main--about-title rise-in rise-delay-1">
                 <h2 class="main--about-heading text-primary text-3xl fw-800">About Us</h2>
                 <p class="main--about-subtext subtext">Serving Excellence in Every Meal</p>
             </div>
+            <div class="main-about-container flex gap-1 mt-2">
+                <!-- Content Area -->
+                <div class="main--about-text-container flex-center flex-col gap-2">
+                    <div class="rise-in rise-delay-2">
+                        <h3 class="main--about-text-heading text-secondary text-2xl">Who We Are</h3>
+                        <p class="main--about-text mx-auto mt-1">
+                            Cafe Plus delivers exceptional food and beverage services for hospitals, institutions, and
+                            corporates. With a focus on quality, hygiene, and care, we redefine hospitality in every
+                            meal.
+                        </p>
+                    </div>
 
-            <!-- Content Area -->
-            <div class="main--about-text-container mt-2 flex-center flex-col gap-2">
-                <div class="rise-in rise-delay-2">
-                    <h3 class="main--about-text-heading text-secondary text-2xl">Who We Are</h3>
-                    <p class="main--about-text mx-auto mt-1">
-                        Cafe Plus delivers exceptional food and beverage services for hospitals, institutions, and
-                        corporates. With a focus on quality, hygiene, and care, we redefine hospitality in every meal.
-                    </p>
+                    <div class="rise-in rise-delay-3">
+                        <h3 class="main--about-text-heading text-secondary text-2xl">Our Mission</h3>
+                        <p class="main--about-text mx-auto mt-1">
+                            To provide world-class hospitality services that nourish, satisfy, and inspire.
+                            We believe that great food brings people together and enhances every environment we serve.
+                        </p>
+                    </div>
+
+                    <a href="#" class="link-btn rise-in rise-delay-4">Know More</a>
                 </div>
 
-                <div class="rise-in rise-delay-3">
-                    <h3 class="main--about-text-heading text-secondary text-2xl">Our Mission</h3>
-                    <p class="main--about-text mx-auto mt-1">
-                        To provide world-class hospitality services that nourish, satisfy, and inspire.
-                        We believe that great food brings people together and enhances every environment we serve.
-                    </p>
-                </div>
+                <div class="main--about-image-container">
+                    <img src="assets/0456ff78af0d45c9d3d23ef020e31143.jpg" alt="" class="rounded-1 main-about-img">
 
-                <a href="#" class="link-btn rise-in rise-delay-4">Know More</a>
+                </div>
             </div>
+
 
         </div>
     </section>
@@ -239,7 +245,7 @@
         });
 
 
-        
+
 
         // scroll to top button
         const scrollBtn = document.getElementById("scrollToTopBtn");
