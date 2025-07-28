@@ -1,5 +1,5 @@
 /* tablet landscape  */
-@media (min-width: 768px) {
+@media (min-width: 765px) {
     html {
         font-size: 58.25%;
     }
@@ -86,6 +86,17 @@
         }
     }
 
+    .main--hero-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main--hero-image-wrapper {
+        width: 100%;
+        max-width: 45rem;
+    }
+
 
     .footer__container {
         flex-direction: row;
@@ -98,7 +109,9 @@
         gap: .5rem;
     }
 
-    .footer__brand,.footer__links,.footer__contact{
+    .footer__brand,
+    .footer__links,
+    .footer__contact {
         flex: 1;
     }
 }
@@ -109,8 +122,13 @@
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1180px) {
     html {
         font-size: 62.5%;
+    }
+
+    .main--hero-image-wrapper {
+        width: 100%;
+        max-width: 55rem;
     }
 }

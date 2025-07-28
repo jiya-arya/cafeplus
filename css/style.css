@@ -1,7 +1,7 @@
 /* Mobile-first Hero Section */
 .main--hero-image-wrapper {
     width: 100%;
-    max-width: 320px;
+    max-width: 32rem;
     background-color: var(--clr-bg-white);
     padding: .5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -15,5 +15,11 @@
 .hero-icon {
     width: 4rem;
     height: auto;
+}
+
+
+
+.main--about{
+    background: radial-gradient(circle at center, #e7d8c1, #faf7f2);
 }
 
