@@ -114,7 +114,10 @@
 .text-xl {
     font-size: 1.5rem;
 }
-
+.d-ib {
+    display: inline-block;
+  }
+  
 .gap-2 {
     gap: 2rem;
 }
@@ -170,9 +173,9 @@
     flex-direction: column;
 }
 
-/* .flex-wrap {
+.flex-wrap {
     flex-wrap: wrap;
-} */
+}
 
 /* .flex-nowrap {
     flex-wrap: nowrap;
@@ -199,9 +202,9 @@
     justify-content: space-around;
 } */
 
-/* .justify-e {
+.justify-e {
     justify-content: space-evenly;
-} */
+}
 
 /* ALIGN ITEMS */
 /* .items-start {

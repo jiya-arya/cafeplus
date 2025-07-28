@@ -51,11 +51,29 @@
     }
 }
 
-/* home about  */
-.main--about {
-    background: radial-gradient(circle at center, #e7d8c1, #faf7f2);
-}
 
+
+/* home stat  */
+
+
+  .stat-item {
+    width: 10rem;
+  }
+  
+  .stat-circle {
+    width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: var(--clr-bg-light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  }
+  
+  
+
+
+
+/* home about  */
 
 .main--about-text{
     max-width: 85%;

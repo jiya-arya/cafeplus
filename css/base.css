@@ -81,30 +81,53 @@ li {
 
 
 /* Scroll-to-top button */
+
+
+/* Floating animation */
+@keyframes gentleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Button base */
 .scroll-to-top {
-    position: fixed;
+    position: relative;
     bottom: 2rem;
-    right: 1.5rem;
-    background-color: #D4A373;
-    color: white;
+    left: 90%;
+    background-color: var(--clr-warm-light);
     border: none;
     border-radius: 50%;
     padding: 0.75rem 1rem;
-    font-size: 1.5rem;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     z-index: 1000;
+
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover */
 .scroll-to-top:hover {
     background-color: #b6713f;
     transform: translateY(-2px);
 }
 
-.scroll-to-top.show {
+/* Icon inside */
+.upArrow-icon {
+    width: 3rem;
+}
+
+/* 👇 New visible class */
+.scroll-to-top.scroll-visible {
     opacity: 1;
     visibility: visible;
+    animation: gentleFloat 2.4s ease-in-out infinite;
 }

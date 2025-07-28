@@ -73,42 +73,91 @@
         </div>
     </main>
 
+
+    <!-- Home Stats Section -->
+    <section class="main--stats section-spacing">
+        <div class="container stat-container flex justify-e">
+
+
+            <!-- Single Stat -->
+            <div class="stat-item flex-center flex-col text-center gap-1">
+                <div class="stat-circle flex-center">
+                    <span class="stat-number text-3xl fw-700 text-secondary d-ib" data-target="250">0</span><span
+                        class="plus-icon text-2xl text-secondary fw-600">+</span>
+                </div>
+                <p class="stat-label text-xl fw-600 text-primary">Clients Served</p>
+            </div>
+
+            <div class="stat-item flex-center flex-col text-center gap-1">
+                <div class="stat-circle flex-center">
+                    <span class="stat-number text-3xl fw-700 text-secondary d-ib" data-target="120">0</span><span
+                        class="plus-icon text-2xl text-secondary fw-600">+</span>
+                </div>
+                <p class="stat-label text-xl fw-600 text-primary">Projects Completed</p>
+
+            </div>
+            <div class="stat-item flex-center flex-col text-center gap-1">
+                <div class="stat-circle flex-center">
+                    <span class="stat-number d-ib text-3xl fw-700 text-secondary" data-target="15">0</span><span
+                        class="plus-icon text-2xl text-secondary fw-600">+</span>
+                </div>
+                <p class="stat-label text-xl fw-600 text-primary">Years of Experience</p>
+
+            </div>
+            <div class="stat-item flex-center flex-col text-center gap-1">
+                <div class="stat-circle flex-center">
+                    <span class="stat-number text-3xl fw-700 text-secondary d-ib" data-target="30">0</span><span
+                        class="plus-icon text-2xl text-secondary fw-600">+</span>
+                </div>
+                <p class="stat-label text-xl fw-600 text-primary">Team Members
+
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
     <!-- Home About Section -->
-   <!-- Home About Section -->
-<section class="main--about section-spacing">
-    <div class="container text-center">
+    <section class="main--about section-spacing">
+        <div class="container text-center">
 
-        <!-- Title Area -->
-        <div class="main--about-title rise-in rise-delay-1">
-            <h2 class="main--about-heading text-primary text-3xl fw-800">About Us</h2>
-            <p class="main--about-subtext subtext">Serving Excellence in Every Meal</p>
-        </div>
-
-        <!-- Content Area -->
-        <div class="main--about-text-container mt-2 flex-center flex-col gap-2">
-            <div class="rise-in rise-delay-2">
-                <h3 class="main--about-text-heading text-secondary text-2xl">Who We Are</h3>
-                <p class="main--about-text mx-auto mt-1">
-                    Cafe Plus delivers exceptional food and beverage services for hospitals, institutions, and
-                    corporates. With a focus on quality, hygiene, and care, we redefine hospitality in every meal.
-                </p>
+            <!-- Title Area -->
+            <div class="main--about-title rise-in rise-delay-1">
+                <h2 class="main--about-heading text-primary text-3xl fw-800">About Us</h2>
+                <p class="main--about-subtext subtext">Serving Excellence in Every Meal</p>
             </div>
 
-            <div class="rise-in rise-delay-3">
-                <h3 class="main--about-text-heading text-secondary text-2xl">Our Mission</h3>
-                <p class="main--about-text mx-auto mt-1">
-                    To provide world-class hospitality services that nourish, satisfy, and inspire.
-                    We believe that great food brings people together and enhances every environment we serve.
-                </p>
+            <!-- Content Area -->
+            <div class="main--about-text-container mt-2 flex-center flex-col gap-2">
+                <div class="rise-in rise-delay-2">
+                    <h3 class="main--about-text-heading text-secondary text-2xl">Who We Are</h3>
+                    <p class="main--about-text mx-auto mt-1">
+                        Cafe Plus delivers exceptional food and beverage services for hospitals, institutions, and
+                        corporates. With a focus on quality, hygiene, and care, we redefine hospitality in every meal.
+                    </p>
+                </div>
+
+                <div class="rise-in rise-delay-3">
+                    <h3 class="main--about-text-heading text-secondary text-2xl">Our Mission</h3>
+                    <p class="main--about-text mx-auto mt-1">
+                        To provide world-class hospitality services that nourish, satisfy, and inspire.
+                        We believe that great food brings people together and enhances every environment we serve.
+                    </p>
+                </div>
+
+                <a href="#" class="link-btn rise-in rise-delay-4">Know More</a>
             </div>
 
-            <a href="#" class="link-btn rise-in rise-delay-4">Know More</a>
         </div>
+    </section>
 
-    </div>
-</section>
-
-
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <img src="assets/icons/up-arrow.png" alt="" class="upArrow-icon">
+    </button>
 
     <!-- site footer -->
     <footer class="site-footer p-1 fade-up">
@@ -156,10 +205,7 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
-        ↑
-    </button>
+
 
     <script>
         // header toggle 
@@ -193,15 +239,17 @@
         });
 
 
+        
+
         // scroll to top button
         const scrollBtn = document.getElementById("scrollToTopBtn");
 
         // Show button on scroll
         window.addEventListener("scroll", () => {
             if (window.scrollY > 300) {
-                scrollBtn.classList.add("show");
+                scrollBtn.classList.add("scroll-visible");
             } else {
-                scrollBtn.classList.remove("show");
+                scrollBtn.classList.remove("scroll-visible");
             }
         });
 
@@ -210,6 +258,30 @@
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
+            });
+        });
+
+
+
+        // counter stat 
+        window.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.stat-number');
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText;
+                    const increment = Math.ceil(target / 60);
+
+                    if (current < target) {
+                        counter.innerText = current + increment;
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
             });
         });
     </script>
