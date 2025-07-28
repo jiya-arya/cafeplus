@@ -36,7 +36,7 @@
 
   // Show button on scroll
   window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 250) {
           scrollBtn.classList.add("scroll-visible");
       } else {
           scrollBtn.classList.remove("scroll-visible");

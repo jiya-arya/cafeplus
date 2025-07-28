@@ -126,6 +126,7 @@
 .site-footer {
     /* padding: 2rem; */
     border-top: 1px solid #e0d8c8;
+    /* position: fixed; */
   }
   
   .footer__brand-heading {
