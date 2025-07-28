@@ -1,0 +1,116 @@
+/* tablet landscape  */
+@media (min-width: 768px) {
+    html {
+        font-size: 58.25%;
+    }
+
+    .nav-menu-icon {
+        display: none;
+    }
+
+    .nav--links {
+        position: static;
+        flex-direction: row;
+        display: flex;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        background-color: transparent;
+        box-shadow: none;
+        width: auto;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .nav-item {
+        opacity: 0;
+        width: fit-content;
+        transform: translateY(-10px);
+        animation: navFadeIn 0.5s ease forwards;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: var(--clr-warm-light);
+        transition: width 0.3s ease;
+    }
+
+    .nav-item:hover::after {
+        width: 100%;
+    }
+
+    .nav-item:hover {
+        background-color: transparent;
+    }
+
+    .nav-cta:hover {
+        background-color: var(--clr-warm-medium);
+        color: var(--clr-bg-white);
+    }
+
+    .nav-item:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .nav-item:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .nav-item:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .nav-item:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .nav-item:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    .nav-item:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    @keyframes navFadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .footer__container {
+        flex-direction: row;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: .5rem;
+    }
+
+    .footer__brand,.footer__links,.footer__contact{
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 62.5%;
+    }
+}

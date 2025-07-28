@@ -1,0 +1,182 @@
+.pos-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.text-heading {
+    color: var(--clr-deep-brown);
+}
+
+.text-subheading {
+    color: var(--clr-rich-brown);
+}
+
+.text-2xl {
+    font-size: 2.3rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.font-poppins {
+    font-family: 'Poppins';
+}
+
+.font-playfair {
+    font-family: 'Playfair Display';
+}
+
+
+
+.p-1 {
+    padding: 1rem;
+}
+
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* FLEX DISPLAY */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .inline-flex {
+    display: inline-flex;
+} */
+
+/* FLEX DIRECTION */
+/* .flex-row {
+    flex-direction: row;
+} */
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* .flex-wrap {
+    flex-wrap: wrap;
+} */
+
+/* .flex-nowrap {
+    flex-wrap: nowrap;
+} */
+
+/* JUSTIFY CONTENT */
+/* .justify-start {
+    justify-content: flex-start;
+} */
+
+/* .justify-c {
+    justify-content: center;
+} */
+
+/* .justify-end {
+    justify-content: flex-end;
+} */
+
+.justify-b {
+    justify-content: space-between;
+}
+
+/* .justify-a {
+    justify-content: space-around;
+} */
+
+/* .justify-e {
+    justify-content: space-evenly;
+} */
+
+/* ALIGN ITEMS */
+/* .items-start {
+    align-items: flex-start;
+} */
+
+.flex-1{
+    flex: 1;
+}
+
+.text-body{
+    color:var( --clr-text-light);
+}
+
+.items-c {
+    align-items: center;
+}
+
+/* .items-end {
+    align-items: flex-end;
+} */
+
+/* .items-stretch {
+    align-items: stretch;
+} */
+
+/* .items-baseline {
+    align-items: baseline;
+} */
+
+/* ALIGN CONTENT (for multi-line flex) */
+/* .content-start {
+    align-content: flex-start;
+} */
+
+/* .content-c {
+    align-content: center;
+} */
+
+/* .content-end {
+    align-content: flex-end;
+} */
+
+/* .content-b {
+    align-content: space-between;
+} */
+
+/* .content-a {
+    align-content: space-around;
+} */
+
+/* .content-e {
+    align-content: space-evenly;
+} */
+
+/* ALIGN SELF (for individual items) */
+/* .self-start {
+    align-self: flex-start;
+} */
+
+/* .self-c {
+    align-self: center;
+} */
+
+/* .self-end {
+    align-self: flex-end;
+} */

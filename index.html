@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cafe Plus - Hospitality Services</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+
+</head>
+
+<body>
+
+    <!-- site header  -->
+    <header class="site-header pos-fixed">
+        <nav class="container nav-container flex justify-b items-c">
+            <div class="nav--logo flex-center gap-1">
+                <img src="assets/images/logo.webp" alt="" class="nav--logo-img">
+                <div class="nav--brand flex flex-col">
+                    <a href="#" class="nav--brand-heading font-playfair text-2xl">
+                        Cafe Plus</a>
+                    <p class="nav--brand-subheading font-poppins">
+                        Hospitality Services
+                    </p>
+                </div>
+            </div>
+
+            <!-- hamburger  -->
+            <div class="nav-menu-icon" id="navToggle">
+                <img src="assets/icons/menu.svg" alt="menu" class="nav-menu-icon-img icon-hamburger">
+                <img src="assets/icons/close.svg" alt="close" class="nav-menu-icon-img icon-close hidden">
+            </div>
+
+
+            <div class="nav--links flex items-c text-center p-1" id="navLinks">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">About Us</a>
+                <a href="#" class="nav-item">Menu</a>
+                <a href="#" class="nav-item">Blog</a>
+                <a href="#" class="nav-item">Contact</a>
+                <a href="#" class="nav-cta nav-item">Proposal</a>
+            </div>
+        </nav>
+    </header>
+
+<!-- Homepage Hero Section -->
+<main class="main--hero">
+    <div class="main--hero-container">
+      
+      <!-- Hero Image -->
+      <div class="main--hero-image-wrapper">
+        <img src="assets/PICTURE.png" alt="Delicious food served by Cafe Plus" class="main--hero-img" />
+      </div>
+  
+      <!-- Hero Text -->
+      <div class="main--hero-text">
+        <img src="assets/leaf.png" alt="" class="hero-icon" />
+        <h1 class="main--hero-welcome">Welcome</h1>
+        <p class="main--hero-subtitle">Taste of Perfection</p>
+        <h2 class="main--hero-brand">Cafe Plus</h2>
+      </div>
+  
+    </div>
+  </main>
+  
+
+    <!-- site footer -->
+    <footer class="site-footer fade-up">
+        <div class="container footer__container text-center flex flex-col">
+
+            <!-- Brand Section -->
+            <div class="footer__brand p-1 flex-center flex-col gap-1 fade-up delay-1">
+                <img src="assets/images/logo.webp" alt="Cafe Plus Logo" class="nav--logo-img footer__logo" />
+                <a class="footer__brand-heading text-heading">
+                    <span class="text-2xl font-playfair">Cafe Plus</span><br />
+                    <span class="font-poppins text-body">Hospitality Service</span>
+                </a>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer__links p-1 fade-up delay-2">
+                <h4 class="footer__heading text-2xl text-heading">Quick Links</h4>
+                <ul class="footer__nav flex-center gap-2">
+                    <li><a class="footer__link" href="#">Home</a></li>
+                    <li><a class="footer__link" href="#">About Us</a></li>
+                    <li><a class="footer__link" href="#">Services</a></li>
+                    <li><a class="footer__link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer__contact p-1 fade-up delay-3">
+                <h4 class="footer__heading text-2xl text-heading">Contact Us</h4>
+                <p>Email: <a class="footer__link"
+                        href="mailto:info@cafeplushospitality.com">info@cafeplushospitality.com</a></p>
+                <p>Phone: <a class="footer__link foot--link-contact" href="tel:+919876543210">+91 98765 43210</a></p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom text-center p-1 fade-up delay-4">
+            <p>&copy; 2025 Cafe Plus Hospitality Service</p>
+            <div class="footer__legal-container flex-center">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+                <span class="divider-line-footer">|</span>
+                <a href="#" class="footer__link">Payment Terms</a>
+                <span class="divider-line-footer">|</span>
+                <a href="#" class="footer__link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        ↑
+    </button>
+
+    <script>
+        // header toggle 
+        const toggleBtn = document.getElementById("navToggle");
+        const navLinks = document.getElementById("navLinks");
+        const iconHamburger = document.querySelector(".icon-hamburger");
+        const iconClose = document.querySelector(".icon-close");
+
+        toggleBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+
+            const isOpen = navLinks.classList.contains("show");
+
+            iconHamburger.classList.toggle("hidden", isOpen);
+            iconClose.classList.toggle("hidden", !isOpen);
+        });
+
+
+        // footer 
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-up-visible');
+                    observer.unobserve(entry.target); // Animate only once
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+
+
+        // scroll to top button
+        const scrollBtn = document.getElementById("scrollToTopBtn");
+
+        // Show button on scroll
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
+        });
+
+        // Scroll to top on click
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

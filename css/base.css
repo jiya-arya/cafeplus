@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 52.5%;
+}
+
+/* variables */
+:root {
+    /* Background Colors */
+    --clr-bg-white: #FEFAF6;
+    --clr-bg: #FAF7F2;
+    --clr-bg-light: #F4EDE0;
+    --clr-bg-soft: #E7D8C1;
+
+    /* Neutral & Accent Tones */
+    --clr-accent-tan: #D8BE99;
+    --clr-accent-gold: #C69C6D;
+
+    /* Warm Shades */
+    --clr-warm-light: #BB8654;
+    --clr-warm-medium: #AE7348;
+    --clr-warm-dark: #915D3D;
+    --clr-warm-deep: #754B37;
+
+    /* Rich Browns */
+    --clr-rich-brown: #5F3F2F;
+    --clr-deep-brown: #331F17;
+
+    /* Dark Base */
+    --clr-text-dark: #2A2A2A;
+    --clr-text-light: #4a4a4a;
+}
+
+
+body {
+    font-size: 1.8rem;
+    color: var(--clr-text-light);
+    padding-top: 8rem;
+    background-color: var(--clr-bg);
+}
+
+.container {
+    /* background-color: pink; */
+    width: 95%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display';
+}
+
+p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+li {
+    font-family: 'Poppins';
+    list-style: none;
+}
+
+
+/* Scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    background-color: #D4A373;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #b6713f;
+    transform: translateY(-2px);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
