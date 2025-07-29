@@ -170,63 +170,59 @@
             </div>
 
             <!-- Content Area -->
-            <div class="main--who-we-serve-content flex-center flex-col gap-2 rise-in rise-delay-2">
+            <!-- <div class="main--who-we-serve-content rise-in rise-delay-2 p-1 grid gap-2"> -->
 
 
-                <div class="main-serve-cards-container p-1 grid gap-2">
-                    <div
-                        class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
-                        <div class="main-serve-icon-container flex-center">
-                            <img src="assets/icons/house-medical-solid.svg" alt="" class="main--serve-card-icon">
+            <div class="main-serve-cards-container p-1 grid gap-2">
+                <div class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
+                    <div class="main-serve-icon-container flex-center">
+                        <img src="assets/icons/house-medical-solid.svg" alt="" class="main--serve-card-icon">
 
-                        </div>
-                        <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Hospitals & Healthcare
-                        </h3>
-                        <p class="main-serve-card-text">
-                            Wholesome, hygienic meals for patients, staff, and visitors, designed with nutrition and
-                            care in mind.
-                        </p>
+                    </div>
+                    <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Hospitals & Healthcare
+                    </h3>
+                    <p class="main-serve-card-text">
+                        Wholesome, hygienic meals for patients, staff, and visitors, designed with nutrition and
+                        care in mind.
+                    </p>
+                </div>
+
+                <div class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
+                    <div class="main-serve-icon-container flex-center"> <img src="assets/icons/briefcase-solid.svg"
+                            alt="" class="main--serve-card-icon">
                     </div>
 
-                    <div
-                        class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
-                        <div class="main-serve-icon-container flex-center"> <img src="assets/icons/briefcase-solid.svg"
-                                alt="" class="main--serve-card-icon">
-                        </div>
+                    <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Corporate Offices & IT
+                        Companies</h3>
+                    <p class="main-serve-card-text">
+                        Balanced and fresh meals to keep professionals energized throughout the day.
+                    </p>
+                </div>
 
-                        <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Corporate Offices & IT
-                            Companies</h3>
-                        <p class="main-serve-card-text">
-                            Balanced and fresh meals to keep professionals energized throughout the day.
-                        </p>
+                <div class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
+                    <div class="main-serve-icon-container flex-center">
+                        <img src="assets/icons/graduation-cap-solid.svg" alt="" class="main--serve-card-icon">
                     </div>
+                    <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Educational Institutions
+                    </h3>
+                    <p class="main-serve-card-text">
+                        Nutritious, timely catering solutions for schools, colleges, and training centers.
+                    </p>
+                </div>
 
-                    <div
-                        class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
-                        <div class="main-serve-icon-container flex-center">
-                            <img src="assets/icons/graduation-cap-solid.svg" alt="" class="main--serve-card-icon">
-                        </div>
-                        <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Educational Institutions
-                        </h3>
-                        <p class="main-serve-card-text">
-                            Nutritious, timely catering solutions for schools, colleges, and training centers.
-                        </p>
+                <div class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
+                    <div class="main-serve-icon-container flex-center">
+
+                        <img src="assets/icons/wine-glass-solid.svg" alt="" class="main--serve-card-icon">
                     </div>
-
-                    <div
-                        class="main-serve-card bg-white box-shadow rounded-1 flex-center flex-col rise-in rise-delay-3">
-                        <div class="main-serve-icon-container flex-center">
-
-                            <img src="assets/icons/wine-glass-solid.svg" alt="" class="main--serve-card-icon">
-                        </div>
-                        <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Event & Conference
-                            Catering</h3>
-                        <p class="main-serve-card-text">
-                            Tailored menus and high-tea packages for meetings and special occasions.
-                        </p>
-                    </div>
+                    <h3 class="main-serve-card-title my-1 text-secondary text-2xl fw-700">Event & Conference
+                        Catering</h3>
+                    <p class="main-serve-card-text">
+                        Tailored menus and high-tea packages for meetings and special occasions.
+                    </p>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -324,84 +320,8 @@
 
 
 
-    <script>
-        // header toggle 
-        const toggleBtn = document.getElementById("navToggle");
-        const navLinks = document.getElementById("navLinks");
-        const iconHamburger = document.querySelector(".icon-hamburger");
-        const iconClose = document.querySelector(".icon-close");
-
-        toggleBtn.addEventListener("click", () => {
-            navLinks.classList.toggle("show");
-
-            const isOpen = navLinks.classList.contains("show");
-
-            iconHamburger.classList.toggle("hidden", isOpen);
-            iconClose.classList.toggle("hidden", !isOpen);
-        });
-
-
-        // footer 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-up-visible');
-                    observer.unobserve(entry.target); // Animate only once
-                }
-            });
-        });
-
-        document.querySelectorAll('.fade-up').forEach(el => {
-            observer.observe(el);
-        });
-
-
-
-
-        // scroll to top button
-        const scrollBtn = document.getElementById("scrollToTopBtn");
-
-        // Show button on scroll
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                scrollBtn.classList.add("scroll-visible");
-            } else {
-                scrollBtn.classList.remove("scroll-visible");
-            }
-        });
-
-        // Scroll to top on click
-        scrollBtn.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-
-
-
-        // counter stat 
-        window.addEventListener('DOMContentLoaded', () => {
-            const counters = document.querySelectorAll('.stat-number');
-
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const current = +counter.innerText;
-                    const increment = Math.ceil(target / 60);
-
-                    if (current < target) {
-                        counter.innerText = current + increment;
-                        setTimeout(updateCount, 20);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-
-                updateCount();
-            });
-        });
-    </script>
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
 
 
 
