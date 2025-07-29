@@ -102,6 +102,15 @@
     }
 
 
+    .main-menu-cards-container{
+        background-color: rgb(185, 16, 185);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-menu-img-container{
+        max-height: 20rem;
+    }
+
     .footer__container {
         flex-direction: row;
     }
@@ -159,11 +168,47 @@
     .blog--card {
         min-height: 28rem;
     }
+
+   
 }
 
 @media (min-width: 1100px) {
    .main-serve-cards-container {
         grid-template-columns: repeat(4,1fr);
+    }
+
+     .main-menu-cards-container{
+        background-color: rgb(128, 231, 118);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-menu-img-container{
+        max-height: 25rem;
+    }
+}
+
+@media (min-width:1266px){
+    .main-menu-cards-container{
+        background-color: rgb(229, 231, 118);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-menu-img-container{
+        max-height: 28rem;
+    }
+}
+
+@media (min-width: 1410px) {
+ .main-menu-cards-container{
+        background-color: rgb(224, 24, 24);
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-menu-img-container{
+        max-height: 32rem;
     }
 }
 
