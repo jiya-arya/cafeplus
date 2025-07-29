@@ -118,6 +118,19 @@
     .footer__contact {
         flex: 1;
     }
+
+    .blog--cards-wrapper{
+        background-color: pink;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .blog--card{
+        width: 45%;
+        /* flex-direction: row; */
+        min-height: 25rem;
+    }
 }
 
 @media (min-width:1024px) {
@@ -135,6 +148,12 @@
     .main--about-text-container {
         align-items: flex-start;
         text-align: left;
+    }
+
+     .blog--card{
+        /* width: 45%; */
+        /* flex-direction: row; */
+        min-height: 28rem;
     }
 }
 
