@@ -102,12 +102,12 @@
     }
 
 
-    .main-menu-cards-container{
+    .main-menu-cards-container {
         background-color: rgb(185, 16, 185);
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main-menu-img-container{
+    .main-menu-img-container {
         max-height: 20rem;
     }
 
@@ -169,37 +169,37 @@
         min-height: 28rem;
     }
 
-   
+
 }
 
 @media (min-width: 1100px) {
-   .main-serve-cards-container {
-        grid-template-columns: repeat(4,1fr);
+    .main-serve-cards-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-     .main-menu-cards-container{
+    .main-menu-cards-container {
         background-color: rgb(128, 231, 118);
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main-menu-img-container{
+    .main-menu-img-container {
         max-height: 25rem;
     }
 }
 
-@media (min-width:1266px){
-    .main-menu-cards-container{
+@media (min-width:1266px) {
+    .main-menu-cards-container {
         background-color: rgb(229, 231, 118);
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main-menu-img-container{
+    .main-menu-img-container {
         max-height: 28rem;
     }
 }
 
 @media (min-width: 1410px) {
- .main-menu-cards-container{
+    .main-menu-cards-container {
         background-color: rgb(224, 24, 24);
         max-width: 90%;
         margin-left: auto;
@@ -207,8 +207,24 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main-menu-img-container{
+    .main-menu-img-container {
         max-height: 32rem;
+    }
+
+    .home__clients-subtitle {
+        max-width: 70%;
+    }
+
+    .home__client-logo {
+        max-height: 9rem;
+        max-width: auto;
+        object-fit: cover;
+        opacity: 0.9;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .home__clients-logos {
+        max-width: 60%;
     }
 }
 
@@ -229,5 +245,9 @@
         width: 100%;
         height: 100%;
         max-width: 55rem;
+    }
+
+    .text-3xl {
+        font-size: 5rem;
     }
 }
