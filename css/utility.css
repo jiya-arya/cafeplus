@@ -101,6 +101,11 @@
     color: var(--clr-rich-brown);
 }
 
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .section-spacing {
     margin: 3rem 0;
 }
