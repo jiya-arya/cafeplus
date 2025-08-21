@@ -168,6 +168,9 @@
     .blog--card {
         min-height: 28rem;
     }
+    .main-testimonial__slider{
+        max-width: 70%;
+    }
 
 
 }

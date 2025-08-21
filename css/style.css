@@ -373,17 +373,12 @@
 
 .blog--btn {
     font-weight: 500;
-    /* font-size: 1.8rem; */
-    /* text-decoration: none; */
     color: #D4A373;
     border: 2px solid #D4A373;
     padding: .8rem 1.8rem;
     border-radius: .6rem;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* position: relative; */
-    /* z-index: 1; */
-    /* font-family: 'Poppins'; */
 }
 
 .blog--btn:hover {
