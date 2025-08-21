@@ -268,6 +268,114 @@
     background-color: lightgreen;
 } */
 
+
+/* .home-testimonial-container{
+    background-color: lightblue;
+} */
+
+.home-testimonial-section {
+  position: relative;
+  background-color:var(--clr-accent-tan);
+}
+
+.home-testimonal-subtext{
+    max-width: 80%;
+line-height: 1.3;
+}
+
+
+.main-testimonial__slider {
+  position: relative;
+  max-width: 95%;
+  /* background-color: lightgreen; */
+}
+
+.main-testimonial__wrapper {
+  overflow: hidden;
+  position: relative;
+  /* background-color: lightseagreen; */
+}
+
+.main-testimonial__card {
+  min-width: 100%;
+  /* background-color: lightslategray; */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  background-color: #fefaf6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.main-testimonial__card.active {
+  opacity: 1;
+  position: relative;
+}
+
+.main-testimonial__quote-icon {
+  height: 3rem;
+  opacity: .7;
+}
+
+.main-testimonial__quote {
+  /* font-size: 2rem; */
+  position: relative;
+  max-width: 70%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.main-testimonial__logo {
+  width: 8rem;
+  height: 7rem;
+  object-fit: cover;
+  /* background-color: lightcoral; */
+}
+
+.main-testimonial__nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.main-testimonial__prev,
+.main-testimonial__next {
+  background-color: transparent;
+  color: #bb8654;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 1rem ;
+  transition: background-color .9s ease;
+}
+
+.main-testimonial__prev:hover,
+.main-testimonial__next:hover {
+  background-color: #D4A373;
+  color: #fefaf6;
+}
+
+
+/* .main-testimonial__quote{
+    background-color: lightpink;
+} */
+
+
+
+
+
+
+
+
+
+
 .home-blog-card {
     background-color: var(--clr-bg-white);
     max-width: 80%;

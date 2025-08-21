@@ -74,3 +74,65 @@
           updateCount();
       });
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+  // =========================
+  // TESTIMONIAL SLIDER CODE
+  // =========================
+  const cards = document.querySelectorAll('.main-testimonial__card');
+  const nextBtn = document.querySelector('.main-testimonial__next');
+  const prevBtn = document.querySelector('.main-testimonial__prev');
+
+  let currentIndex = 0;
+  let interval;
+
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.classList.remove('active');
+      if (i === index) {
+        card.classList.add('active');
+      }
+    });
+  }
+
+  function nextCard() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  }
+
+  function prevCard() {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  }
+
+  function startAutoSlide() {
+    interval = setInterval(nextCard, 4000); // Auto slide every 4 seconds
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
+  }
+
+  if (nextBtn && prevBtn && cards.length > 0) {
+    nextBtn.addEventListener('click', () => {
+      nextCard();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevCard();
+      stopAutoSlide();
+      startAutoSlide();
+    });
+
+    // Initialize slider
+    showCard(currentIndex);
+    startAutoSlide();
+  } else {
+    console.warn("Testimonial slider elements not found in DOM!");
+  }
+}); // ✅ This was missing
+
+    
