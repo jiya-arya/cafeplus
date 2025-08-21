@@ -338,7 +338,8 @@
 
 /* Who we are section  */
 .about-who-we-are-section{
-    background-color: lightcoral;
+     background: radial-gradient(circle at center, var(--clr-accent-tan), var(--clr-bg-light));
+
     padding: 6% 1rem;
 }
 
