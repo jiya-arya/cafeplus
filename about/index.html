@@ -17,6 +17,38 @@
 </head>
 
 <body>
+<!-- site header  -->
+    <header class="site-header pos-fixed">
+        <nav class="container nav-container flex justify-b items-c">
+            <div class="nav--logo flex-center gap-1">
+                <img src="../assets/images/logo.webp" alt="" class="nav--logo-img">
+                <div class="nav--brand flex flex-col">
+                    <a href="../index.html" class="nav--brand-heading font-playfair text-2xl fw-800 lh-1">
+                        Cafe Plus</a>
+                    <p class="nav--brand-subheading font-poppins fw-500">
+                        Hospitality Services
+                    </p>
+                </div>
+            </div>
+
+            <!-- hamburger  -->
+            <div class="nav-menu-icon" id="navToggle">
+                <img src="../assets/icons/menu.svg" alt="menu" class="nav-menu-icon-img icon-hamburger">
+                <img src="../assets/icons/close.svg" alt="close" class="nav-menu-icon-img icon-close hidden">
+            </div>
+
+
+            <div class="nav--links flex items-c text-center p-1" id="navLinks">
+                <a href="../index.html" class="nav-item fw-500">Home</a>
+                <a href="../about/index.html" class="nav-item fw-500">About Us</a>
+                <a href="../menu/index.html" class="nav-item fw-500">Menu</a>
+                <a href="../blog/index.html" class="nav-item fw-500">Blog</a>
+                <a href="../contact/index.html" class="nav-item fw-500">Contact</a>
+                <a href="#" class="nav-cta nav-item fw-600">Proposal</a>
+            </div>
+        </nav>
+    </header>
+
     <!-- about who we are section  -->
     <section class="about-who-we-are-section section-spacing">
         <div class="container about-who-we-are-container text-center">
@@ -154,6 +186,7 @@
         </div>
     </section>
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
