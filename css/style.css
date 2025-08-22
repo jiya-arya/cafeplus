@@ -379,7 +379,12 @@
 }
 
 
+/* menu page  */
 
+/* contact section */
+.menu-contact-btn{
+padding: 1rem 2rem;
+}
 
 /* blog page  */
 .blog--section-heading {
