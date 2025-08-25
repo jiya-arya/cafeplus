@@ -12,7 +12,7 @@ html {
 /* variables */
 :root {
     /* Background Colors */
-    --clr-bg-white: #FEFAF6;
+    --clr-bg-white: rgb(254, 250, 246);
     --clr-bg: #FAF7F2;
     --clr-bg-light: #F4EDE0;
     --clr-bg-soft: #E7D8C1;
