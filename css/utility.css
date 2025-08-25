@@ -59,7 +59,6 @@
     border-radius: 1rem;
 }
 
-
 .text-center {
     text-align: center;
 }
@@ -106,14 +105,15 @@
     padding-bottom: 1rem;
 }
 
-
-
 .section-spacing {
     margin: 3rem 0;
 }
 
 .bg-soft {
     background-color: var(--clr-bg-soft);
+}
+.bg-soft-light {
+    background-color: var(--clr-bg-light);
 }
 
 .text-2xl {

@@ -386,6 +386,41 @@
 padding: 1rem 2rem;
 }
 
+.contact-quote-text{
+    color: var(--clr-warm-dark) ;
+    font-style: italic;
+}
+.contact-quote-icon{
+   height: 4rem;
+    opacity: .5;
+}
+
+.contact-address-map{
+    /* background-color: orange; */
+    /* padding: 1rem; */
+    height: 32rem;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow: hidden;
+}
+
+.contact-map{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: .8rem; */
+    opacity: .9;
+}
+
+.contact-addres-text{
+    max-width: 80%;
+}
+
+/* quote section  */
+
+
 /* blog page  */
 .blog--section-heading {
     color: var(--clr-warm-medium);

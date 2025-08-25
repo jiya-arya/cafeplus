@@ -54,26 +54,46 @@
 
 
   // counter stat 
-  window.addEventListener('DOMContentLoaded', () => {
-      const counters = document.querySelectorAll('.stat-number');
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.stat-number');
 
-      counters.forEach(counter => {
-          const updateCount = () => {
-              const target = +counter.getAttribute('data-target');
-              const current = +counter.innerText;
-              const increment = Math.ceil(target / 60);
+    if (counters.length === 0) return; // Exit if no counters
 
-              if (current < target) {
-                  counter.innerText = current + increment;
-                  setTimeout(updateCount, 20);
-              } else {
-                  counter.innerText = target;
-              }
-          };
+    let hasAnimated = false; // Prevent multiple triggers
 
-          updateCount();
-      });
-  });
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const increment = Math.ceil(target / 60);
+
+            const updateCount = () => {
+                const current = +counter.innerText;
+
+                if (current < target) {
+                    counter.innerText = current + increment;
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCount();
+        });
+    };
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+            animateCounters();
+            hasAnimated = true;
+            observer.disconnect(); // Stop observing
+        }
+    }, { threshold: 0.5 }); // Trigger when 50% visible
+
+    // Observe the parent section of stats
+    const statsSection = document.querySelector('.main--stats');
+    if (statsSection) observer.observe(statsSection);
+});
 
 
   document.addEventListener('DOMContentLoaded', () => {
